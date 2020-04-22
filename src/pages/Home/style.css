@@ -1,0 +1,195 @@
+.first-content{
+    text-align: center;
+    background-image: url('../../assets/fundo1.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
+    color: white;
+    padding: 30px 0px;
+    transition: all .5s linear;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+.menu-icons{
+    padding: 0 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-icons img{
+    cursor: pointer;
+}
+
+#bt-menu{
+    display: none;
+}
+
+.button-menu{
+    display: block;
+    cursor: pointer;
+    padding: 15px 0px;
+    font-size: 2em;
+}
+
+#bt-menu:checked ~ .menu-nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#bt-menu:checked ~ .first-content-main{
+    display: none;
+}
+
+.menu-nav{
+    display: none;
+}
+
+.menu-nav ul{
+
+}
+
+.menu-nav li{
+    list-style: none;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-nav div{
+    padding: .5em;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.menu-nav div:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.first-content-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    padding: 0 10vw;
+}
+
+.first-content-text{
+
+}
+
+.first-content-text span{
+    color: red;
+}
+
+.first-content-text button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all ease-out .5s;
+}
+
+.first-content-text button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+.first-content-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.first-content-buttons-button{
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    transition: all ease-out .5s;
+    background-color: lightgray;
+}
+
+.first-content-buttons-button-active{
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+    transition: all ease-out .5s;
+    background-color: white;
+}
+
+.first-content-buttons b{
+
+}
+
+.none{
+    display: none;
+}
+
+@media screen and (min-width: 1180px){
+    .first-content{
+        height: 100vh;
+    }
+
+    .button-menu{
+        display: none;
+    }
+
+    .menu-nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+     .menu-nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-nav li{
+    padding: 0 1rem;
+    }
+
+    .logo{
+        
+    } 
+
+    .menu{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .menu-icons{
+        padding: 0;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icons img{
+        padding: 0 1rem;
+    }
+
+    .first-content-main{
+        margin-top: 25vh;
+        padding: 0 20vw;
+    }
+}

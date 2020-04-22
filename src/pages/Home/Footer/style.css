@@ -1,0 +1,40 @@
+.container-footer{
+    background-color: #2b2b2b;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.menu-footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.menu-footer li{
+    list-style: none;
+}
+
+.menu-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: .7em;
+}
+
+.menu-footer div{
+    cursor: pointer;
+    padding: 2vh 2vw;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.menu-footer div:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 1180px){
+    .container-footer{
+        padding: 10vh 25vw;
+    }
+}
